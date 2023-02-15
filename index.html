@@ -1,15 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Merriweather&family=Oxygen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
 </head>
 
 <body>
-    <h1>Hello Github!</h1>
+    <section id="sign-in">
+        <p id="sign-text">Sign in</p>
+        <form>
+            <label class="email">Email(phone or mobile accounts)</label><br>
+            <input type="text" id="email" placeholder="Email"> <br>
+            <label class="pwd">Password</label><a href="#" id="forgot">Forgot Password</a><br>
+            <input type="password" id="password" placeholder="Enter Password"><br>
+        </form>
+        <div>
+            <input type="button" value="Continue" id="continue"><br>
+            <span id="assistance"><a href="#"><ul><li>Need Help?</li> </ul> </a></span>
+        </div>
+    </section>
+    <!-- Create-account-section -->
+    <div>
+        <p class="new-customer"><span>New To Amazon?</span></p>
+        <div id="button-create-account">
+            <a href="#">
+            <button id="new-account">Create Your Amazon Account</button>
+            </a>
+        </div>
+    </div>
+    <!-- Copyright-help-section -->
+    <hr>
+    <div id="last">
+        <footer class="link">
+            <a href="#" id="conditions">Conditions</a>
+            <a href="#" id="privacy">Privacy Policy</a>
+            <a href="#" id="help">Help</a> <br>
+            <p id="special"> &copy; 1996-2020, Amazon.com,inc or it's affiliates</p>
+    
+        </footer>
+    </div>
 </body>
-
 </html>
