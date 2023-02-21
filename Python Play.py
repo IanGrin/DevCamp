@@ -1,2 +1,2 @@
-# print(bin(5))
-# print(int(0b101))
+fruits = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+print(fruits[2:5])
