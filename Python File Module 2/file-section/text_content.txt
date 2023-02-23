@@ -1,0 +1,21 @@
+So I created a document here and I'll provide it in the show notes as well called text content, but you can use any kind of text content you want and it'll all work fine. I just copied and pasted one of the video guides and I'm just using that so we have quite a bit of text content here.
+
+So I wanna be able to read this content in using Python and then I also wanna perform a task. I want to be able to count how many words are inside of this file. So that can be something that is very helpful whenever you're working with text content is being able to run analytics on it to see how many words or how many elements are inside of the file. So that's gonna be something you'll probably need to do quite a bit, so we're gonna walk through how we can do that here.
+
+The very first thing that I'm gonna do is I'm going to create a function. So this is gonna be called def get_file_contents and then it's gonna take in a filename as an argument. So from here, I'm going to pull in the queried file, so I'm just gonna create a variable here called queried_file and set that equal to open. So once again we're using the open function inside of Python. And then this is going to take two arguments like we've seen before.
+
+It's gonna take the filename argument, which is the path to the file, and then from there, the second argument is 'r' in this case. So we've seen that we can use w, we've seen that we can use a, and now we're using r. The w was for writing, the a was for appending and the r, as you may have guessed, is for reading, so we are going to read this file.
+
+I'm gonna first perform some quality check here. So I wanna make sure that this process here on line two, I wanna make sure that that worked. So I'm gonna say if the queried_file.mode is equal to 'r' then I wanna perform a task. And the reason why I'm doing that, we technically do not need that for this specific case but imagine a scenario where you're performing all kinds of tasks for a file. So you may be writing, you may be appending and you may be doing all of them in the same class or even in the same function.
+
+And if you're doing that, you wanna make sure that when you are reading the file that you're actually in read mode. So that's all we're doing here and I also just wanted to show you this mode function. This gives you the ability to call a file object and to be able to see what type of mode it's in, whether it's in write mode, read more, or append.
+
+Now that we've done that, if we have checked and we can see we're in read mode, I want to return the queried_file.read so I'm gonna call a read function here and that is all that we need to do, so now let's actually call the function.
+
+So I'm gonna create a variable called content and this is gonna be equal to calling the function, so we'll call get_file_contentsand then we can pass in the path to the file. Now remember whenever you're working with files inside of Python, wherever you're calling the file from is what's considered the root of the path. So if I were to say get_file_contents and you can see over here on the left-hand side that I have the text content file inside of this file section directory.
+
+Well if I were to simply say something like text_content.txt this would not work and the reason is because I'm currently calling this file, I'm calling this function from inside the root of the application. So because of that, I am going to have to call the full path, which you can see is a directory called file-section.
+
+So I will say I want to grab the file-section/text_content file. So that is gonna give me access to the file I actually want to work with and now that we can see that I'm gonna close that off just so we have a little bit more room and now let's just print out the details.
+
+So I'm going to print out our content and let's see what we have here. So run Python and that's in the file section, reading from file Python script. So if I run that, you can see that we have pulled in all of the text content that was in that file. So that is working
