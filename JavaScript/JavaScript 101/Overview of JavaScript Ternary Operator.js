@@ -17,14 +17,12 @@ let userOne = {
     name: 'Kristine',
     admin: true
 }
-
 adminControls(userOne);
 
 let userTwo = {
     name: 'Tiffany',
     admin: false
 }
-
 adminControls(userTwo);
 
 let userThree = null
@@ -38,8 +36,8 @@ adminControls(userThree);
 //     //     console.log('is not old enough yet');
 //     // }
 
-//     let answer = age > 25 ? 'can rent a car' : "can't rent a car";
-//     console.log(answer);
+//     // let answer = age > 25 ? 'can rent a car' : "can't rent a car";
+//     // console.log(answer);
 
 //     // age > 25 ? console.log('can rent a car') : console.log("can't rent a car");
 // }
