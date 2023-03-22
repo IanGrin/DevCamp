@@ -2,7 +2,7 @@ const login = () => {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             resolve('User logged in...');
-        }, 2000);
+        }, 4000);
     });
 }
 
@@ -14,12 +14,12 @@ const updateAccount = () => {
     });
 }
 
-async function loginActivities() {
-    const returnedLogin = await login();
+async function loginActivities(login, updateAccount) {
+    const returnedLogin = await login;
     console.log(returnedLogin);
 
-    const returnedUpdateAccount = await updateAccount();
+    const returnedUpdateAccount = await updateAccount;
     console.log(returnedUpdateAccount);
 }
 
-loginActivities();
+loginActivities(login(), updateAccount());
