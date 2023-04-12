@@ -1,0 +1,3 @@
+let greet = {
+    name: 'ian'
+}

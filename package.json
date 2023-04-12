@@ -1,6 +1,9 @@
 {
   "dependencies": {
     "browser-sync": "^2.27.11",
-    "gulp": "^4.0.2"
+    "devcamp-js-builder": "^1.6.3",
+    "gulp": "^4.0.2",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4"
   }
 }

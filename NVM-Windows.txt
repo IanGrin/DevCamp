@@ -1,0 +1,81 @@
+NVM-Windows
+https://github.com/coreybutler/nvm-windows
+
+N.B.: If you have Node.js installed already, you need to uninstall it so it doesn’t lead to errors when using different versions of Node and installing packages from the NPM registry.
+
+Restart your PC after that, open the command prompt or PowerShell, and run node -v to confirm Node has been uninstalled.
+
+ss1-2
+
+In addition, if you have yarn installed, uninstall it and reinstall it after installing NVM. You don’t want to get weird errors while installing and using packages from the NPM registry.
+Follow the steps below to download nvm-windows
+
+    Step 1: Head over to the nvm-windows repository and click on Download Now!”
+    ss2-2
+
+You’ll be taken to a page containing different versions of nvm-windows.
+
+    Step 2: Click on the latest version to download it. For now, it is the April 28, 2022 version.
+    ss3-2
+
+    Step 3: Locate the installer on your computer and open it. Follow the installation wizard to install it.
+    ss4-2
+    ss5-3
+
+    Step 4: Open up PowerShell or Command Prompt and run nvm -v to confirm the installation.
+    ss6-2
+
+If you get the same message I got above, then nvm-windows has been successfully installed. Congrats!
+How to Use NVM on Windows 10
+
+To use NVM, you need to open PowerShell or Command Prompt as an admin. You can also use Git bash.
+
+    To open PowerShell as admin, right-click on Start and select “PowerShell (Admin)”.
+    powershell-admin
+
+    To open Command Prompt as admin, search for “cmd” and select “Open as Administrator” on the right.
+    cmd-admin
+
+How to Install Different Versions of Node.js and NPM with NVM
+
+The superpower NVM gives you is the ability to have multiple versions of Node.js installed on your machine.
+
+To install the latest version of Node, run nvm install latest.
+ss7-1
+
+It is always better to install the long-term support (LTS) version of Node because it is less buggy.
+
+To install the LTS version of Node, run nvm install lts.
+ss8-1
+
+To install a specific version of Node, you need to run nvm list available first so you can see the versions of Node that are available.
+ss9-1
+
+To install that specific version, run nvm install node-version-number. For example, nvm install 14.20.0.
+ss10-1
+
+N.B.: Once you install a version of Node, the corresponding version of NPM is installed for you. So you don’t need to install NPM separately.
+
+If the version of NPM you want to use is not available, run npm install @npm version-number -g to install it.
+
+Now, to see the list of Node versions you have installed on your Windows machine, run nvm list.
+ss11-1
+
+To use a specific version of Node, run:
+
+    nvm use latest to use the latest version
+    nvm use lts to use the long-term support version
+    nvm use version-number to use any other version you have installed
+    ss12-1
+
+Recap
+
+This article showed you how to install NVM on Windows 10 (nvm-windows) and how to use it to install and manage different versions of Node.
+
+As a reminder, here are the common commands you’ll be using with nvm-windows:
+
+    nvm install node-version – install a version of Node
+    nvm list – see the versions of Node you have installed on your machine
+    nvm use node-version – use a specific version of Node
+
+Thank you for reading and keep coding :)

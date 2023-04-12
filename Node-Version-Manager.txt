@@ -1,0 +1,23 @@
+Node Version Manager (NVM) is a tool that allows you to install and manage multiple versions of Node.js on your machine. It makes it easy to switch between different versions of Node.js as needed.
+
+NVM-Windows
+https://github.com/coreybutler/nvm-windows
+
+
+Here are some commonly used NVM commands:
+
+    nvm install <version> - Installs the specified version of Node.js.
+
+    nvm use <version> - Switches to the specified version of Node.js.
+
+    nvm ls - Lists all the versions of Node.js that are currently installed on your machine.
+
+    nvm ls-remote - Lists all the available versions of Node.js that can be installed.
+
+    nvm alias <name> <version> - Creates an alias for a specific version of Node.js.
+
+    nvm current - Displays the currently active version of Node.js.
+
+    nvm uninstall <version> - Uninstalls the specified version of Node.js.
+
+These are some of the most commonly used NVM commands, but there are many more available. You can see a full list of commands and their descriptions by running nvm help in your terminal.
