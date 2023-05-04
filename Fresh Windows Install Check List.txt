@@ -1,0 +1,51 @@
+Fresh Windows Install Check List
+
+Friday, February 17, 2023
+1:32 PM
+
+	- Download VS Code
+		○ Install 'live server' - Ritwick Dey
+		○ Install .run (Code Runner)
+		○ Install devcampVSC (follow instructions on how to connect it to account)
+		○ (personal preference)  Monokai Pro - Key in email
+		○ Install Python
+		○ Enable Emmet
+		○ Install ThunderClient Extension
+		○ Install MongoDb Extension
+		○ Install JavaScript Extension
+		○ Install Babel Extension
+		○ Install Prettier Extension
+		○ Install Eslint
+		○ Install 'sqlite Viewer"
+		○ TabNine
+		○ Install 'react extension pack'
+		○ Install 'react native tools'
+		○ Install 'Draw.io Integration' - Henning Dieterichs
+	- Download and install 'Git Bash' - look up install instructions in DevCamp
+	- Download Github Desktop
+	- Download/install Node.js version control 
+	- Download Node.Js - come with 'npm' and 'npx'
+		○ Install DevCamp JavaScript Project Builder - 'npm I devcamp-js-builder -g' - ('-g' installs npm globally)
+		○ Install 'npm install -g live-server' - creates a 'fake' live server to automatically update code
+		○ Install 'npm install -g browserify'
+		○ Install 'npm install - react'
+			§ Optional projects downloads - 
+				□ 'tachyons'
+	- Install LoDash via 'npm' - 'npm install lodash' - per project
+	- Download Git 
+	- Download Python
+	- Setup Git and Gulp Client
+	- Make sure pip is installed and updated
+		○ Pip install beautifulsoup
+		○ Pip install requests
+		○ Pip install numpy
+		○ Pip install pipenv
+			§ Pipenv shell ( to start virtual enviroment)
+			§ Pipenv install requests
+			§ Pipenv install numpy
+	- Download VirtualMachine
+	- Download Postman (for Linux machines - https://www.bluematador.com/blog/postman-how-to-install-on-ubuntu-1604?utm_source=hootsuite&utm_medium=twitter&utm_campaign=)
+	- MongoDb
+	- PostgreSQL - in terminal 'psql -U postgres' - make sure to add path in 'edit variables'
+	- Heroku - download and login via terminal - 'heroku login'
+npm install --save-dev babel-preset-stage-1

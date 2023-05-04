@@ -1,0 +1,64 @@
+GIT and Install Git Repository and Gulp Server
+
+Wednesday, February 15, 2023
+11:18 AM
+
+	- Git init
+	- Git add .
+	- Git commit -m "Initial Commit"
+Create new repository in Github and copy code from "…or push an existing repository from the command line." 
+
+Integrating Gulp - Cmd
+	'npm install gulp-cli -g'
+	- 'npm install gulp browser-sync'
+
+In VS Code - create new file name .gitignore
+	- In the file write
+		○ 'node_modules'
+Create new file named gulpfile.js
+vargulp = require('gulp');
+varbrowserSync = require('browser-sync').create();
+varreload = browserSync.reload;
+gulp.task('serve', function() {
+  browserSync.init({
+    server: {
+      baseDir: "./"}
+  });
+gulp.watch("*.html").on("change", reload);
+});
+'git status' - returns a list of files in the repository
+'git rm -r --cached .' - removes recent file from cache to be pushed to the repo
+'git pull' - pulls the latest version from GitHub website
+
+'git branch' - shows what branch your on in git
+'git checkout -b readme-styling' - switches branches to 'readme-styling' branch\
+	- 'git add README.md'
+	- 'git commit -m "updated readme"
+'git checkout main' - switches back to the master branch
+**Git checkout (name of branch) to switch into whatever branch by name
+'git merge readme-styling' -to merge the updated file to the main
+** 'git checkout -b '(name of new branch)'
+'git push -u origin '(name of current branch)'' - this pushes up the branch to the repo
+'git log' - returns the logs of everything that has been done
+	- Type 'q' or 'z' to exit log - use 'j' and 'k' to move up and down and 'shift g' to go all the way to the bottom.
+'git stash' - stashes the changes so you can change branches without losing your work
+	- 'git stash list' - returns a time of the stash
+	- 'git stash show' - returns a list of changes saved to the stash
+	- 'git stash apply' - brings back all the changes that were made
+	- 'git stash clear' - always clear the stash when done to avoid confusion
+'git fetch' - brings back all the changes but doesn’t override code made locally
+'git merge origin/main' - to merge the changes made locally with the 'fetch'
+'git branch -d (name of branch to be removed) - removes specified branch
+'git push origin --delete (branch to delete) - deletes branch from git repo
+'git diff (optional name of specific file) - to show list of changes made
+
+'git clone (url)' - clones repo on different computer
+
+To update forked projects
+	- 'git remote -v' 
+	- 'git remote add upstream (url)' - no parens 
+	- 'git pull upstream main'
+	
+"starting the day"
+	- Switch into the master branch
+Do a 'git pull' request to make sure you have an updated branch
